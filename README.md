@@ -8,3 +8,6 @@ Notebooks contain three tests:
 2) Testing the local conformance (noise experiment + example) + distribution profile
 3) A convergence test (adding more and more instances to the simulated log and the antilog).
 
+# Updated, not yet shared:
+- Log generation using pm4py library
+- Local conformance checking using output a multiple time steps
