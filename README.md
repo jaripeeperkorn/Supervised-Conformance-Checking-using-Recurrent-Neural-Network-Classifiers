@@ -1,12 +1,9 @@
 # Supervised-Conformance-Checking-using-Recurrent-Neural-Network-Classifiers
 Supervised Conformance Checking using Recurrent Neural Network Classifiers
 
-DIscriminator_conformance.py contains python code for the method. Has setting for both random antilog generation and noise addition antilog.
-
-Notebooks contain three tests:
-1) Testing the global conformance of the different models
-2) Testing the local conformance (noise experiment + example) + distribution profile
-3) A convergence test (adding more and more instances to the simulated log and the antilog).
+## The folder ML4PM contains the files discussed in the paper for the ML4PM workshop at ICPM 2020.
+Discriminator_conformance.py contains python code for the method. Has setting for both random antilog generation and noise addition antilog.
+Notebook contains the testing discussed in the paper
 
 # Updated, not yet shared:
 - Log generation using pm4py library
