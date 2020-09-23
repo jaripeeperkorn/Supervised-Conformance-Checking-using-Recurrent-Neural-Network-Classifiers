@@ -2,19 +2,9 @@
 <pnml>
   <net id="net1" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
     <page id="n0">
-      <place id="p_1">
+      <place id="p_9">
         <name>
-          <text>p_1</text>
-        </name>
-      </place>
-      <place id="p_3">
-        <name>
-          <text>p_3</text>
-        </name>
-      </place>
-      <place id="p_2">
-        <name>
-          <text>p_2</text>
+          <text>p_9</text>
         </name>
       </place>
       <place id="p_4">
@@ -22,19 +12,24 @@
           <text>p_4</text>
         </name>
       </place>
+      <place id="p_2">
+        <name>
+          <text>p_2</text>
+        </name>
+      </place>
       <place id="p_5">
         <name>
           <text>p_5</text>
         </name>
       </place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      </place>
       <place id="p_6">
         <name>
           <text>p_6</text>
-        </name>
-      </place>
-      <place id="p_7">
-        <name>
-          <text>p_7</text>
         </name>
       </place>
       <place id="source">
@@ -45,14 +40,14 @@
           <text>1</text>
         </initialMarking>
       </place>
-      <place id="p_8">
+      <place id="p_7">
         <name>
-          <text>p_8</text>
+          <text>p_7</text>
         </name>
       </place>
-      <place id="p_9">
+      <place id="p_1">
         <name>
-          <text>p_9</text>
+          <text>p_1</text>
         </name>
       </place>
       <place id="sink">
@@ -60,52 +55,30 @@
           <text>sink</text>
         </name>
       </place>
-      <transition id="name_H">
+      <place id="p_8">
         <name>
-          <text>H</text>
+          <text>p_8</text>
         </name>
-      </transition>
-      <transition id="name_A">
-        <name>
-          <text>A</text>
-        </name>
-      </transition>
+      </place>
       <transition id="name_I">
         <name>
           <text>I</text>
+        </name>
+      </transition>
+      <transition id="name_D">
+        <name>
+          <text>D</text>
         </name>
       </transition>
       <transition id="tau1">
         <name>
           <text>tau1</text>
         </name>
-        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="97d55d94-0435-4623-9b4a-ba8758df6174"/>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="7776ba62-8410-4b1a-a0a8-2dd5c7f5aef1"/>
       </transition>
-      <transition id="name_B">
+      <transition id="name_A">
         <name>
-          <text>B</text>
-        </name>
-      </transition>
-      <transition id="name_C">
-        <name>
-          <text>C</text>
-        </name>
-      </transition>
-      <transition id="tau2">
-        <name>
-          <text>tau2</text>
-        </name>
-        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="64dcb4da-c1a4-4933-b460-d61d282ee125"/>
-      </transition>
-      <transition id="tau3">
-        <name>
-          <text>tau3</text>
-        </name>
-        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="dd88681f-002f-4cf8-a623-aaab3d6f9c60"/>
-      </transition>
-      <transition id="name_D">
-        <name>
-          <text>D</text>
+          <text>A</text>
         </name>
       </transition>
       <transition id="name_E">
@@ -113,9 +86,31 @@
           <text>E</text>
         </name>
       </transition>
+      <transition id="tau2">
+        <name>
+          <text>tau2</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="4432b30b-feb5-433e-a03e-7deecb9814fb"/>
+      </transition>
+      <transition id="name_B">
+        <name>
+          <text>B</text>
+        </name>
+      </transition>
       <transition id="name_F">
         <name>
           <text>F</text>
+        </name>
+      </transition>
+      <transition id="tau3">
+        <name>
+          <text>tau3</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="7ce0a36f-0bf4-4c1c-964a-4d40786dac7c"/>
+      </transition>
+      <transition id="name_C">
+        <name>
+          <text>C</text>
         </name>
       </transition>
       <transition id="name_G">
@@ -123,36 +118,41 @@
           <text>G</text>
         </name>
       </transition>
-      <arc id="-9223371948532891006" source="p_7" target="tau3"/>
-      <arc id="88321884806" source="p_1" target="name_C"/>
-      <arc id="-9223371948532890999" source="name_C" target="p_1"/>
-      <arc id="88321884813" source="name_C" target="p_8"/>
-      <arc id="-9223371948532890992" source="p_8" target="name_F"/>
-      <arc id="-9223371948532891118" source="p_1" target="name_B"/>
-      <arc id="88321884820" source="name_F" target="p_9"/>
-      <arc id="-9223371948532890985" source="p_9" target="name_F"/>
-      <arc id="88321884722" source="name_A" target="p_1"/>
-      <arc id="-9223371948532891083" source="source" target="name_A"/>
-      <arc id="88321884729" source="name_B" target="p_2"/>
-      <arc id="88321884736" source="p_2" target="name_E"/>
-      <arc id="-9223371948532891069" source="name_E" target="p_9"/>
-      <arc id="88321884743" source="p_9" target="name_I"/>
-      <arc id="-9223371948532891062" source="name_I" target="sink"/>
-      <arc id="88321884750" source="p_1" target="tau1"/>
-      <arc id="-9223371948532891055" source="tau1" target="p_3"/>
-      <arc id="88321884757" source="name_B" target="p_3"/>
-      <arc id="-9223371948532891048" source="p_3" target="name_D"/>
-      <arc id="88321884764" source="name_D" target="p_4"/>
-      <arc id="-9223371948532891041" source="p_4" target="name_E"/>
-      <arc id="88321884771" source="p_4" target="tau3"/>
-      <arc id="-9223371948532891034" source="tau3" target="p_9"/>
-      <arc id="88321884778" source="tau1" target="p_5"/>
-      <arc id="-9223371948532891027" source="p_5" target="tau2"/>
-      <arc id="88321884785" source="tau2" target="p_6"/>
-      <arc id="-9223371948532891020" source="p_5" target="name_G"/>
-      <arc id="88321884792" source="name_G" target="p_6"/>
-      <arc id="-9223371948532891013" source="p_6" target="name_H"/>
-      <arc id="88321884799" source="name_H" target="p_7"/>
+      <transition id="name_H">
+        <name>
+          <text>H</text>
+        </name>
+      </transition>
+      <arc id="130009773698" source="source" target="name_A"/>
+      <arc id="130009774340" source="name_H" target="p_7"/>
+      <arc id="130009773704" source="p_1" target="name_B"/>
+      <arc id="130009774346" source="p_7" target="tau3"/>
+      <arc id="130009774352" source="p_1" target="name_C"/>
+      <arc id="130009773713" source="p_3" target="name_D"/>
+      <arc id="130009773716" source="name_B" target="p_2"/>
+      <arc id="130009774358" source="name_C" target="p_1"/>
+      <arc id="130009773722" source="p_2" target="name_E"/>
+      <arc id="130009774364" source="name_C" target="p_8"/>
+      <arc id="130009773728" source="name_E" target="p_9"/>
+      <arc id="130009774370" source="p_8" target="name_F"/>
+      <arc id="130009773734" source="p_9" target="name_I"/>
+      <arc id="130009774376" source="name_F" target="p_9"/>
+      <arc id="130009773740" source="name_I" target="sink"/>
+      <arc id="130009774382" source="p_9" target="name_F"/>
+      <arc id="130009773746" source="p_1" target="tau1"/>
+      <arc id="130009773752" source="tau1" target="p_3"/>
+      <arc id="130009773758" source="name_B" target="p_3"/>
+      <arc id="130009773767" source="name_D" target="p_4"/>
+      <arc id="130009773773" source="p_4" target="name_E"/>
+      <arc id="130009773779" source="p_4" target="tau3"/>
+      <arc id="130009773785" source="tau3" target="p_9"/>
+      <arc id="130009773791" source="tau1" target="p_5"/>
+      <arc id="130009773797" source="p_5" target="tau2"/>
+      <arc id="130009773803" source="p_6" target="name_H"/>
+      <arc id="130009773806" source="tau2" target="p_6"/>
+      <arc id="130009773812" source="p_5" target="name_G"/>
+      <arc id="130009773818" source="name_G" target="p_6"/>
+      <arc id="130009773692" source="name_A" target="p_1"/>
     </page>
     <finalmarkings>
       <marking>
