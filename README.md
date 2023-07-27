@@ -1,6 +1,8 @@
 # Supervised-Conformance-Checking-using-Recurrent-Neural-Network-Classifiers
 Supervised Conformance Checking using Recurrent Neural Network Classifiers
 
+For more up to date version of these methods, please go to: https://github.com/jaripeeperkorn/ML_Conformance
+
 ## The folder ML4PM contains the files discussed in the paper for the ML4PM workshop at ICPM 2020.
 pad_discriminator_conformance.py.py contains python code for the method. Has setting for both random antilog generation and noise addition antilog.
 Notebook contains the testing discussed in the paper. The code in this folder will soon be outdated.
